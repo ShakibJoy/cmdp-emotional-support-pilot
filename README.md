@@ -37,7 +37,7 @@ exact p ≥ 0.36); the constraint was largely inactive (λ ≤ 0.04) because the
 ## Reproducing
 1. Download ESConv from https://github.com/thu-coai/Emotional-Support-Conversation
    (academic research use only) and build the triples with [script, or "see paper §3.1"].
-2. Model checkpoints available on request.
+2. Model checkpoints and Kaggle dataset available on request.
 3. Set `OPENAI_API_KEY` as an environment variable or Kaggle Secret.
 4. Hardware: one NVIDIA T4 (16 GB). PPO takes ~3 h per run; total API cost was ~US$0.42.
 
