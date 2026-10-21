@@ -26,17 +26,18 @@ exact p ≥ 0.36); the constraint was largely inactive (λ ≤ 0.04) because the
 | PPO constrained | −2.545 | 11.0% (8/73) | 2.40 | 2.55 | 27/100 |
 
 ## Repository contents
-- `notebooks/1_rft.ipynb`: candidate generation (500 prompts × 3) and LoRA fine-tuning
-- `notebooks/2_ppo.ipynb`: critic-free PPO; set `USE_CONSTRAINT = True/False`
-- `notebooks/3_…`, `4_…`: evaluation runs 1 (single attempt) and 2 (up to 5 attempts)
-- `notebooks/5_base_model_diagnostic.ipynb`: untuned-model failure diagnostic
-- `prompts/`: system prompt, training oracle, evaluation oracle, judge
-- `results/`: per-response evaluation outputs (responses, rewards, costs, judge scores)
+- `rft.ipynb` — RFT: candidate generation (500 prompts × 3) and LoRA fine-tuning
+- `ppo unconstrain.ipynb` / `ppo constrain.ipynb` — critic-free PPO (`USE_CONSTRAINT = False / True`)
+- `evaluation v1.ipynb` — first evaluation run (single attempt per prompt)
+- `evaluation v2.ipynb` — main evaluation (retry-on-failure, up to 5 attempts)
+- `diagnostic-run.ipynb` — untuned base-model failure diagnostic (19/30)
+- `figures/` — paper figures
+- `results/` — per-response evaluation outputs
 
 ## Reproducing
 1. Download ESConv from https://github.com/thu-coai/Emotional-Support-Conversation
    (academic research use only) and build the triples with [script, or "see paper §3.1"].
-2. Model checkpoints: [Hugging Face / Kaggle Dataset link].
+2. Model checkpoints available on request.
 3. Set `OPENAI_API_KEY` as an environment variable or Kaggle Secret.
 4. Hardware: one NVIDIA T4 (16 GB). PPO takes ~3 h per run; total API cost was ~US$0.42.
 
