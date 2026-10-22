@@ -1,6 +1,6 @@
 # cmdp-emotional-support-pilot
 
-# Lagrangian-Constrained PPO with an LLM Safety-Cost Oracle for Emotional-Support Dialogue
+Lagrangian-Constrained PPO with an LLM Safety-Cost Oracle for Emotional-Support Dialogue
 
 **Summary.** TinyLlama-1.1B-Chat → rejection fine-tuning (RFT) → unconstrained vs.
 Lagrangian-constrained PPO, with a live GPT-4o-mini safety-cost oracle, evaluated on 100
