@@ -1,5 +1,7 @@
 # cmdp-emotional-support-pilot
 
+**Paper:** [cmdp_emotional_support_pilot.pdf](cmdp_emotional_support_pilot.pdf) manuscript, 2026; 
+
 Lagrangian-Constrained PPO with an LLM Safety-Cost Oracle for Emotional-Support Dialogue
 
 **Summary.** TinyLlama-1.1B-Chat → rejection fine-tuning (RFT) → unconstrained vs.
